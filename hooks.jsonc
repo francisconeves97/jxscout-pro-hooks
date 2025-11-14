@@ -1,5 +1,7 @@
 {
   // Example hook config that runs all examples
+  // Replace YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN with your Discord webhook
+  // Replace /path/to/jxscouthooks with the actual path to this repository
   "global": {
     "asset_saved": {
       "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' /path/to/jxscouthooks/run-all-examples.sh"
@@ -8,4 +10,62 @@
       "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' /path/to/jxscouthooks/run-all-examples.sh"
     }
   }
+
+  // Alternatively, run individual hooks (uncomment to use):
+
+  // Subdomain & Domain Discovery
+  // "global": {
+  //   "asset_saved": {
+  //     "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' bun run /path/to/jxscouthooks/examples/subdomain-domain-extractor/index.ts"
+  //   }
+  // }
+
+  // JWT Token Analysis
+  // "global": {
+  //   "asset_saved": {
+  //     "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' bun run /path/to/jxscouthooks/examples/jwt-analyzer/index.ts"
+  //   }
+  // }
+
+  // DOM XSS Detection
+  // "global": {
+  //   "asset_saved": {
+  //     "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' bun run /path/to/jxscouthooks/examples/dom-xss-detector/index.ts"
+  //   }
+  // }
+
+  // CSS Injection Detection
+  // "global": {
+  //   "asset_saved": {
+  //     "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' bun run /path/to/jxscouthooks/examples/css-injection-detector/index.ts"
+  //   }
+  // }
+
+  // Interesting Comments Extraction
+  // "global": {
+  //   "asset_saved": {
+  //     "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' bun run /path/to/jxscouthooks/examples/interesting-comments-extractor/index.ts"
+  //   }
+  // }
+
+  // Custom Secrets Detection
+  // "global": {
+  //   "asset_saved": {
+  //     "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' bun run /path/to/jxscouthooks/examples/custom-secrets-discord-webhook/index.ts"
+  //   }
+  // }
+
+  // TruffleHog Secret Scanning
+  // "global": {
+  //   "asset_saved": {
+  //     "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' bun run /path/to/jxscouthooks/examples/trufflehog-discord-webhook/index.ts"
+  //   }
+  // }
+
+  // Sensitive Path Detection (requires asset_analyzed event)
+  // "global": {
+  //   "asset_analyzed": {
+  //     "cmd": "DISCORD_WEBHOOK_URL='https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN' bun run /path/to/jxscouthooks/examples/sensitive-paths-discord-webhook/index.ts"
+  //   }
+  // }
 }
