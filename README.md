@@ -6,7 +6,7 @@ Hooks is a jxscout pro feature that allows you to listen to jxscout events and r
 
 ## Testing all examples
 
-There's an example hooks.jsonc file that you can use to test all the examples in this repo. To do that, replace your `~/.jxscout/hooks.jsonc` hooks file with this one and update the discord webhook and the path to this repo on your system. Then run your command to enable jxscout pro, IE: `jxscout-pro -project-name my-project-name`.
+There's an example hooks.jsonc file that you can use to test all the examples in this repo. To do that, replace your `~/.jxscout/hooks.jsonc` hooks file with this one and update the discord webhook and the path to this repo on your system. Then run your command to enable jxscout pro, IE: `jxscout-pro -project-name my-project-name -custom-hooks-enabled`.
 
 Current examples:
 
