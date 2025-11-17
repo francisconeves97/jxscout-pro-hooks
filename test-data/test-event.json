@@ -1,0 +1,12 @@
+{
+  "type": "asset_saved",
+  "asset": {
+    "file_path": "./test-data/sample-app.js",
+    "url": "https://example.com/assets/app.js",
+    "content_type": "JS",
+    "is_inline_js": false,
+    "is_discovered_chunk": false
+  },
+  "project": "test-project",
+  "project_working_directory": "./test-data"
+}
